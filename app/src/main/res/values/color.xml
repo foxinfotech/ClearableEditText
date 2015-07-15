@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="list_item_title">#fff</color>
+    <color name="list_background">#ffffff</color>
+    <color name="list_background_pressed">#cdcdcd</color>
+    <color name="list_divider">#cbcfd4</color>
+    <color name="counter_text_bg">#626262</color>
+    <color name="counter_text_color">#c5c4c4</color>
+    <color name="black_color">#000000</color>
+    <color name="gray_color">#808080</color>
+    <color name="white_color">#ffffff</color>
+    <color name="app_theme_color">#7b7c7e</color>
+    <color name="alpha_app_theme_color">#cdcdcd</color>
+    <color name="text_color">#5d5d5d</color>
+    <color name="tabs_scroll_color">#7b7c7e</color>
+    <color name="tabs_background_color">#ffffff</color>
+    <color name="tabs_scroll_selected_color">#5d5d5d</color>
+    <color name="tabs_scroll_unselected_color">#5d5d5d</color>
+    <color name="rate_bar_color">#7b7c7e</color>
+    <color name="shop_color">#91aa31</color>
+    <color name="call_sms_color">#803e68</color>
+    <color name="text_color_white">#ffffff</color>
+
+
+
+</resources>
