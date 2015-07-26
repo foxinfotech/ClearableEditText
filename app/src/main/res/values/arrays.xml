@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string-array name="project_entries">
+        <item>Select Project</item>
+        <item>Project1</item>
+        <item>Project2</item>
+        <item>Project3</item>
+    </string-array>
+
+
+</resources>

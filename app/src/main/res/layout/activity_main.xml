@@ -1,27 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:focusableInTouchMode="true"
-    android:orientation="vertical"
-    android:weightSum="2">
+    android:orientation="vertical">
 
-    <ScrollView
-        android:id="@+id/scroll_view"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_gravity="top"
-        android:layout_weight="1.7"
-        android:fadeScrollbars="false">
-
-        <LinearLayout
+     <LinearLayout
+           android:id="@+id/parent_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="5dp"
+            android:layout_margin="15dp"
             android:orientation="vertical">
 
             <TextView
@@ -35,7 +26,7 @@
                 android:id="@+id/edt_first_name"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
+                android:singleLine="true"
                 android:inputType="textCapWords"
                 />
 
@@ -50,6 +41,8 @@
             <com.foxinfotech.clearableedittext.ClearableEditText
                 android:id="@+id/edt_email"
                 android:layout_width="match_parent"
+                android:singleLine="true"
+                android:inputType="textEmailAddress"
                 android:layout_height="wrap_content"
                  />
 
@@ -65,9 +58,9 @@
                 android:id="@+id/edt_password"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:singleLine="true"
                 android:inputType="textPassword"
                 />
-
 
             <TextView
                 android:id="@+id/txt_phone"
@@ -75,7 +68,6 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:text="Phone"
-
                 android:textStyle="bold" />
 
             <com.foxinfotech.clearableedittext.ClearableEditText
@@ -85,14 +77,44 @@
                 android:inputType="phone"
                 />
 
+         <TextView
+             android:id="@+id/txt_role"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+             android:text="Phone"
+             android:textStyle="bold" />
+
+         <Spinner
+             android:id="@+id/spin_role"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:entries="@array/project_entries"
+             android:inputType="textPassword"
+             android:textColor="@color/text_color"
+              />
 
 
+             <TextView
+                 android:id="@+id/txt_description"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_marginTop="10dp"
+                 android:text="Description"
 
+                 android:textStyle="bold" />
 
+             <com.foxinfotech.clearableedittext.ClearableEditText
+                 android:id="@+id/edt_description"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:minLines="5"
+                 android:singleLine="false"
+                 android:inputType="textMultiLine"
+                 />
 
+ </LinearLayout>
 
-        </LinearLayout>
-    </ScrollView>
 
     <LinearLayout
         android:id="@+id/linear"
